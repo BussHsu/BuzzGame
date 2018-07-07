@@ -1,0 +1,46 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public abstract class BaseCommandButtonState: BattleState
+{
+	protected string menuTitle;
+	protected List<ButtonData> menuOptions;
+	
+	public override void Enter()
+	{
+		base.Enter ();
+		SelectTile (turn.actor.tile.pos);
+		LoadMenu ();
+	}
+	
+	public override void Exit()
+	{
+		base.Exit ();
+		//		abilityMeunPanelController.Hide ();
+		commandButtonController.Hide ();
+	}
+	
+	protected override void OnFire(object sender, InfoEventArgs<int> e)
+	{
+		if (e.info == 0)
+			Confirm ();
+		else
+			Cancel ();
+	}
+	
+	protected override void OnMove(object sender, InfoEventArgs<Point> e)
+	{
+		if (e.info.x > 0 || e.info.y < 0)
+			//			abilityMeunPanelController.Next ();
+			commandButtonController.Next ();
+		
+		else
+			//			abilityMeunPanelController.Previous ();
+			commandButtonController.Previous ();
+	}
+	
+	protected abstract void LoadMenu();
+	protected abstract void Confirm();
+	protected abstract void Cancel();
+}

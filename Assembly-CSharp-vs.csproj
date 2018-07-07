@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{5A2C95A8-4C8A-57D5-364A-A3B9ECBD985F}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_1;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\MainMenuController.cs" />
+     <Compile Include="Assets\Map\Scripts\1\Mapper.cs" />
+     <Compile Include="Assets\Map\Scripts\1\Node\BandNode.cs" />
+     <Compile Include="Assets\Map\Scripts\1\Node\BarNode.cs" />
+     <Compile Include="Assets\Map\Scripts\1\Node\InvertNode.cs" />
+     <Compile Include="Assets\Map\Scripts\1\Node\MutiplyNode.cs" />
+     <Compile Include="Assets\Map\Scripts\1\Node\Node.cs" />
+     <Compile Include="Assets\Map\Scripts\1\PerlinMapper.cs" />
+     <Compile Include="Assets\Map\Scripts\1\PerlinVisulizer.cs" />
+     <Compile Include="Assets\Map\Scripts\1\RenderLayer.cs" />
+     <Compile Include="Assets\Map\Scripts\2\FixedSpritePicker.cs" />
+     <Compile Include="Assets\Map\Scripts\2\Painter.cs" />
+     <Compile Include="Assets\Map\Scripts\2\PaletteSpritePicker.cs" />
+     <Compile Include="Assets\Map\Scripts\2\PerlinSpriteVisualizer.cs" />
+     <Compile Include="Assets\Map\Scripts\2\RandomSpritePicker.cs" />
+     <Compile Include="Assets\Map\Scripts\2\RenderLayerPainter.cs" />
+     <Compile Include="Assets\Map\Scripts\2\SpritePicker.cs" />
+     <Compile Include="Assets\Map\Scripts\2\WeightedRandomSpritePicker.cs" />
+     <Compile Include="Assets\PathTest.cs" />
+     <Compile Include="Assets\SSScript\Data\ListDataContainer.cs" />
+     <Compile Include="Assets\SSScript\Data\SaveData.cs" />
+     <Compile Include="Assets\SSScript\Data\SaveDataContainer.cs" />
+     <Compile Include="Assets\SSScript\DataHolder.cs" />
+     <Compile Include="Assets\SSScript\GameManager.cs" />
+     <Compile Include="Assets\SSScript\GameState\GameState.cs" />
+     <Compile Include="Assets\SSScript\GameState\MainMenuState.cs" />
+     <Compile Include="Assets\SSScript\SaveLoadController.cs" />
+     <Compile Include="Assets\SceneFader.cs" />
+     <Compile Include="Assets\Script\AnimatorScript\ClosePanel.cs" />
+     <Compile Include="Assets\Script\Common\Animation\BallisticV3Tweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\EasingControl.cs" />
+     <Compile Include="Assets\Script\Common\Animation\EasingEquations.cs" />
+     <Compile Include="Assets\Script\Common\Animation\RectTransformAnchorPositionTweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\RectTransformAnimationExtensions.cs" />
+     <Compile Include="Assets\Script\Common\Animation\RectTransformPathTwenner.cs" />
+     <Compile Include="Assets\Script\Common\Animation\TransformAnimationExtensions.cs" />
+     <Compile Include="Assets\Script\Common\Animation\TransformLocalEulerTweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\TransformLocalPositionTweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\TransformPositionTweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\TransformScaleTweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\Tweener.cs" />
+     <Compile Include="Assets\Script\Common\Animation\Vector3Tweener.cs" />
+     <Compile Include="Assets\Script\Common\AssetCreator.cs" />
+     <Compile Include="Assets\Script\Common\AssetLoader.cs" />
+     <Compile Include="Assets\Script\Common\NotificationCenter\NotificationCenter.cs" />
+     <Compile Include="Assets\Script\Common\NotificationCenter\NotificationExtensions.cs" />
+     <Compile Include="Assets\Script\Common\ObjectPooling\GameObjectPoolController.cs" />
+     <Compile Include="Assets\Script\Common\ObjectPooling\PoolData.cs" />
+     <Compile Include="Assets\Script\Common\ObjectPooling\Poolable.cs" />
+     <Compile Include="Assets\Script\Common\StateMachine\State.cs" />
+     <Compile Include="Assets\Script\Common\StateMachine\StateMachine.cs" />
+     <Compile Include="Assets\Script\Common\UI\CommandMenuButton.cs" />
+     <Compile Include="Assets\Script\Common\UI\CommandMenuController.cs" />
+     <Compile Include="Assets\Script\Common\UI\LayoutAnchor.cs" />
+     <Compile Include="Assets\Script\Common\UI\Panel.cs" />
+     <Compile Include="Assets\Script\Controller\AbilityMenuPanelController.cs" />
+     <Compile Include="Assets\Script\Controller\AttackSuccessIndicator.cs" />
+     <Compile Include="Assets\Script\Controller\BattleController.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\AbilityTargetState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\ActionSelectionState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\BaseAbilityMenuState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\BaseCommandButtonState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\BattleState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\CategorySelectionState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\CommandSelectionState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\CutSceneState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\EndFacingState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\ExploreState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\InitBattleState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\MoveSequenceState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\MoveTargetState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\OldSkillStates\AbilityAreaSelectionState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\OldSkillStates\AbilityTargetStateOld.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\OldSkillStates\ConfirmAbilityTargetState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\OldSkillStates\PerformAbilityState.cs" />
+     <Compile Include="Assets\Script\Controller\BattleState\SelectUnitState.cs" />
+     <Compile Include="Assets\Script\Controller\ConversationController.cs" />
+     <Compile Include="Assets\Script\Controller\ExperienceManager.cs" />
+     <Compile Include="Assets\Script\Controller\FacingController.cs" />
+     <Compile Include="Assets\Script\Controller\InputController.cs" />
+     <Compile Include="Assets\Script\Controller\StatPanelController.cs" />
+     <Compile Include="Assets\Script\Controller\TurnOrderController.cs" />
+     <Compile Include="Assets\Script\Creator\ClassAsset.cs" />
+     <Compile Include="Assets\Script\Creator\MapCreator.cs" />
+     <Compile Include="Assets\Script\Creator\ScriptableObjectUtility.cs" />
+     <Compile Include="Assets\Script\Enum\Alliances.cs" />
+     <Compile Include="Assets\Script\Enum\Directions.cs" />
+     <Compile Include="Assets\Script\Enum\Elements.cs" />
+     <Compile Include="Assets\Script\Enum\EquipSlots.cs" />
+     <Compile Include="Assets\Script\Enum\Gender.cs" />
+     <Compile Include="Assets\Script\Enum\MovementType.cs" />
+     <Compile Include="Assets\Script\Enum\SkillEnums.cs" />
+     <Compile Include="Assets\Script\Enum\SkillType.cs" />
+     <Compile Include="Assets\Script\Enum\StatTypes.cs" />
+     <Compile Include="Assets\Script\EventArgs\InfoEventArgs.cs" />
+     <Compile Include="Assets\Script\Exceptions\BaseException.cs" />
+     <Compile Include="Assets\Script\Exceptions\Info.cs" />
+     <Compile Include="Assets\Script\Exceptions\MatchTypeException.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\AddValueModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\ClampValueModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\MaxValueModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\MinValueModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\Modifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\MultDeltaModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\MultValueModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\Modifiers\ValueModifier.cs" />
+     <Compile Include="Assets\Script\Exceptions\ValueChangeException.cs" />
+     <Compile Include="Assets\Script\Exceptions\ValueMaxException.cs" />
+     <Compile Include="Assets\Script\Extensions\DirectionExtension.cs" />
+     <Compile Include="Assets\Script\Extensions\FacingExtensions.cs" />
+     <Compile Include="Assets\Script\Extensions\GameObjectExtensions.cs" />
+     <Compile Include="Assets\Script\Extensions\PointExtensions.cs" />
+     <Compile Include="Assets\Script\Model\ConversationData.cs" />
+     <Compile Include="Assets\Script\Model\Map.cs" />
+     <Compile Include="Assets\Script\Model\Point.cs" />
+     <Compile Include="Assets\Script\Model\ScriptableObjectListDB.cs" />
+     <Compile Include="Assets\Script\Model\SpeakerData.cs" />
+     <Compile Include="Assets\Script\Model\TileType.cs" />
+     <Compile Include="Assets\Script\Model\TileTypeData.cs" />
+     <Compile Include="Assets\Script\Model\Turn.cs" />
+     <Compile Include="Assets\Script\ViewModelController\AbilityMenuEntry.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityEffectTarget\AbilityEffectTarget.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityEffectTarget\DefaultAbilityEffectTarget.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityEffectTarget\KOdAbilityEffectTarget.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityRange\AbilityRange.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityRange\ConeAbilityRange.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityRange\ConstantAbilityRange.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityRange\InfiniteAbilityRange.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityRange\LineAbilityRange.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AbilityRange\SelfAbilityRange.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AreaOfEffect\AbilityArea.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AreaOfEffect\FullAbilityArea.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AreaOfEffect\SpecifyAbilityArea.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\AreaOfEffect\UnitAbilityArea.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\HitRate\ATypeHitRate.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\HitRate\FullTypeHitRate.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\HitRate\HitRate.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Ability\HitRate\STypeHitRate.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Equipment.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Job.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Rank.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Actor\Stats.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Board.cs" />
+     <Compile Include="Assets\Script\ViewModelController\CameraRig.cs" />
+     <Compile Include="Assets\Script\ViewModelController\City.cs" />
+     <Compile Include="Assets\Script\ViewModelController\ConversationPanel.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Feature\AddPoisonStatusFeature.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Feature\AddStatusFeature.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Feature\Feature.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Feature\StatMaxFeature.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Feature\StatModifierFeature.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Item\Consumable.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Item\Equippable.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Item\Merchandise.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Item\Weapon.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Movement\FlyMovement.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Movement\Movement.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Movement\TeleportMovement.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Movement\WalkMovement.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Constrain\Constrain.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Constrain\StatProportionConstrain.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Constrain\StatValueConstrain.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Data\ConstrainData.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Data\EffectData.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Data\PhaseData.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Data\SkillData.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Effect\Effect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Effect\StatValueModifyEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Skill.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\SkillTargetRecord.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Skill\Skills.cs" />
+     <Compile Include="Assets\Script\ViewModelController\StatPanel.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\Status.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusCondition\DurationStatusCondition.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusCondition\StatusCondition.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusCondition\TurnStatusCondition.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusEffect\BlindStatusEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusEffect\HasteStatusEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusEffect\PoisonStatusEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusEffect\SlowStatusEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusEffect\StatusEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Status\StatusEffect\StopStatusEffect.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Tile.cs" />
+     <Compile Include="Assets\Script\ViewModelController\Unit.cs" />
+     <Compile Include="Assets\Script\WorldMap\Hero.cs" />
+     <Compile Include="Assets\Script\WorldMap\Node\CityNode.cs" />
+     <Compile Include="Assets\Script\WorldMap\Node\MapNode.cs" />
+     <Compile Include="Assets\Script\WorldMap\Node\WayNode.cs" />
+     <Compile Include="Assets\Script\WorldMap\PathData.cs" />
+     <Compile Include="Assets\Script\WorldMap\Runtime\PathCtrl.cs" />
+     <Compile Include="Assets\Script\WorldMap\Spline\MathUtils.cs" />
+     <Compile Include="Assets\Script\WorldMap\Spline\SplineController.cs" />
+     <Compile Include="Assets\Script\WorldMap\Spline\SplineInterpolator.cs" />
+     <Compile Include="Assets\Script\WorldMap\WayPath.cs" />
+     <Compile Include="Assets\Script\WorldMap\WorldMap.cs" />
+     <Compile Include="Assets\Script\WorldMap\WorldMapCreator\WorldMapCreator.cs" />
+     <Compile Include="Assets\Script\WorldMap\WorldMapData.cs" />
+     <Compile Include="Assets\Script\WorldMap\WorldMapLoader.cs" />
+     <Compile Include="Assets\Script\test\TerrainMoveModifier.cs" />
+     <Compile Include="Assets\Script\test\TestItems.cs" />
+     <Compile Include="Assets\Script\test\TestLevelGrowth.cs" />
+     <Compile Include="Assets\Script\test\TestStatus.cs" />
+     <Compile Include="Assets\WorldMapSceneController.cs" />
+     <Compile Include="Assets\_temp\EnemyData.cs" />
+     <Compile Include="Assets\_temp\ItemInterface\IPart.cs" />
+     <Compile Include="Assets\_temp\ItemInterface\IWhole.cs" />
+     <Compile Include="Assets\_temp\ItemInterface\Part.cs" />
+     <Compile Include="Assets\_temp\ItemInterface\Whole.cs" />
+     <Compile Include="Assets\test.cs" />
+     <None Include="Assets\DOTween\DOTween46.xml" />
+     <None Include="Assets\DOTween\DOTween50.xml" />
+     <None Include="Assets\DOTween\readme.txt" />
+     <None Include="Assets\DOTween\DOTween43.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/Buzz/Desktop/Buzz/Assets/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>C:/Users/Buzz/Desktop/Buzz/Assets/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>C:/Users/Buzz/Desktop/Buzz/Assets/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>C:/Users/Buzz/Desktop/Buzz/Assets/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
